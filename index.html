@@ -1,12 +1,339 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aizhe | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aizhee | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --bg-dark: #141d33;
+            --bg-light: #f8fafc;
+            --text-dark: #f1f5f9;
+            --text-light: #1e293b;
+        }
+
+        [data-theme="dark"] body {
+            background: #0e0c12;
+            color: var(--text-dark);
+        }
+
+        [data-theme="light"] body {
+            background: var(--bg-light);
+            color: var(--text-light);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background: linear-gradient(135deg, #05050f, #0d2b26);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            transition: background 0.3s;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            padding: 0.5rem;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-top: 1rem;
+        }
+
+        .language-icons {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: left;
+            gap: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #64748b;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: linear-gradient(to top right, #111621, #12221f);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s ease;
+        }
+
+        [data-theme="light"] .card {
+            background: linear-gradient(to top right, #f1f5f9, #e2e8f0);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            background: #475569;
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
+
 <body>
-    Hello World
-    adfadf
+    <header>
+        <i class="bi bi-brightness-high theme-toggle" id="themeToggle" title="Toggle Theme"></i>
+        <img src="https://avatars.githubusercontent.com/u/108914551?v=4" alt="My Profile Photo" class="profile-img" />
+        <h1>AIZHAR JAMILANO <br>(Aizhee)</h1>
+        <h5>Web Development | Machine Learning | IoT | Networks | App Development</h5>
+        <br>
+        <p>Here's a showcase of what I've built or contributed to over the years.</p>
+        <img src="https://ghchart.rshah.org/0d2b26/Aizhee" alt="GitHub Contributions Chart" style="max-width: 100%; height: auto;" />
+
+    </header>
+    </div>
+    <div class="container">
+        <h2>Web</h2>
+        <div class="grid">
+            <a href="https://aizhee.github.io/online-tech/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="olt.png" alt="Online Tech" />
+                    <div class="card-title">Online Tech</div>
+                    <p>Compiled web course projects</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>Machine Learning</h2>
+        <div class="grid">
+            <a href="https://aizhee.github.io/Cognate-Lab-Finals/quezon_map_solar_feasability" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="gis.png" alt="Quezon Map Solar" />
+                    <div class="card-title">Quezon Map Solar Feasibility</div>
+                    <p>GIS-based solar feasibility analysis.</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>VSCode Extensions</h2>
+        <div class="grid">
+            <a href="https://github.com/Aizhee/Magic-8-Ball-Extension" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://camo.githubusercontent.com/b8b686a6ba8db2987ec83f604bc5d1b3c5c9088341cd62b792a48e7c36e26a52/68747470733a2f2f73392e67696679752e636f6d2f696d616765732f53564732612e706e67"
+                        alt="Magic 8Ball" />
+                    <div class="card-title">Magic 8-Ball</div>
+                    <p>Fun random 8-ball messages in VSCode.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Aizhee/3d-html-viewer" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://github.com/Aizhee/3d-html-viewer/raw/main/res/img/product1.png"
+                        alt="3D HTML Viewer" />
+                    <div class="card-title">3D HTML Viewer</div>
+                    <p>View HTML content in 3D perspective.</p>
+                </div>
+        </div>
+        </a>
+
+        <h2>Applications</h2>
+        <div class="grid">
+
+            <a href="https://buoy.theturingmachines.asia/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="buoy.png" alt="Buoy" />
+                    <div class="card-title">Buoy</div>
+                    <p>An AI-powered phishing website detection app.</p>
+                </div>
+            </a>
+
+            <a href="https://sites.google.com/view/gflh/android-app?authuser=0" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/g_PlRwPfx5hcUhCMAA9fIEiDb8kLXk_IBVjIFz1duoJZ1hStPaWF-aKQowWD1kNNfwTUYqFvIKfvcZrfOlNTr2Q=w16383"
+                        alt="GFLH" />
+                    <div class="card-title">GFLH</div>
+                    <p>Student learning app for BSCpE GF.</p>
+                </div>
+            </a>
+            <a href="https://ko-fi.com/s/2fc73dd2f4" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://github.com/Aizhee/CleanVerb/raw/main/GitImages/CleanVerb.png"
+                        alt="CleanVerb VST" />
+                    <div class="card-title">CleanVerb VST</div>
+                    <p>A clean, simple reverb VST plugin.</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>IoT/PCB Design</h2>
+        <div class="grid">
+            <a href="https://oshwlab.com/manedub2015/works" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="pcb.png" alt="EasyEDA" />
+                    <div class="card-title">PCB Design</div>
+                    <p>Compilation of EasyEDA layouts.</p>
+                </div>
+            </a>
+            <a href="https://www.tinkercad.com/things/5ISAv2JhBVr-attiny-dice-5v-7segment?sharecode=B4qy5ydiOO6Db3yC5s4FSR7pOVBl8dHRriLSZ_lIcbA"
+                target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="attiny.png" alt="ATTINY85 Dice" />
+                    <div class="card-title">ATTiny85 Dice</div>
+                    <p>A simple, compact electronic dice.</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>Libraries</h2>
+        <div class="grid">
+            <a href="https://github.com/Aizhee/DiscordHooks" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="dchook.png" alt="DiscordHooks" />
+                    <div class="card-title">DiscordHooks</div>
+                    <p>Kotlin-Java library for sending Discord messages.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Aizhee/iframe-server" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ifrm.png" alt="Iframe Server" />
+                    <div class="card-title">Iframe Server</div>
+                    <p>Lite live-server version with JS injection for iframes.</p>
+                </div>
+            </a>
+            <a href="https://github.com/Aizhee/Time-moji" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="timji.png" alt="Time-moji" />
+                    <div class="card-title">Time-moji</div>
+                    <p>JS library that returns emoji based on time.</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>Utility Websites</h2>
+        <div class="grid">
+            <a href="https://aizhee.github.io/Github-to-jsDelivr-Generator/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="jsdlv.png" alt="GitHub to jsDelivr" />
+                    <div class="card-title">GitHub to jsDelivr</div>
+                    <p>Generate CDN links using jsDelivr.</p>
+                </div>
+            </a>
+            <a href="https://aizhee.github.io/Assembly-Generator/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="asmgen.png" alt="Assembly Generator" />
+                    <div class="card-title">Assembly Generator</div>
+                    <p>Tools/scripts for assembly code generation.</p>
+                </div>
+            </a>
+            <a href="https://aizhee.github.io/Networks-Generator/" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="ntwrk.png" alt="Networks Generator" />
+                    <div class="card-title">Networks Generator</div>
+                    <p>Generates commands for router configuration (Cisco).</p>
+                </div>
+            </a>
+            <a href="https://github.com/Aizhee/Commit-Line" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="https://camo.githubusercontent.com/3b797c49000e1b98cd445b4edd3c706705a0eb38f195010a1be0b2132089971d/68747470733a2f2f7331322e67696679752e636f6d2f696d616765732f53564435792e706e67"
+                        alt="Commit Line" />
+                    <div class="card-title">Commit-Line</div>
+                    <p>Embeddable commit history tree generator.</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>General Programming</h2>
+        <div class="grid">
+            <a href="https://github.com/Aizhee/java-stuff" target="_blank"
+                style="text-decoration: none; color: inherit;">
+                <div class="card">
+                    <img src="jva.png" alt="Java Stuff" />
+                    <div class="card-title">Java-stuff</div>
+                    <p>Various Java projects and experiments.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById('themeToggle');
+        toggle.addEventListener('click', () => {
+            const html = document.documentElement;
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                toggle.classList.replace('bi-brightness-high', 'bi-moon');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                toggle.classList.replace('bi-moon', 'bi-brightness-high');
+            }
+        });
+    </script>
 </body>
+<footer>
+    <div class="container">
+        <p style="text-align: center; margin-top: 2rem;">&copy; 2025 Aizhar Jamilano (Aizhee)</p>
+        <div style="text-align: center; margin-top: 1rem;">
+            <a href="https://github.com/Aizhee" target="_blank" style="margin: 0 1rem; color: inherit; font-size: 1.5rem; text-decoration: none;">
+            <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:aizharjamilano@gmail.com" style="margin: 0 1rem; color: inherit; font-size: 1.5rem; text-decoration: none;">
+            <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aizharjamilano/" target="_blank" style="margin: 0 1rem; color: inherit; font-size: 1.5rem; text-decoration: none;">
+            <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+    </div>
+
+
 </html>
