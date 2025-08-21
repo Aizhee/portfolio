@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'media.licdn.com', pathname: '/**' },
     ],
   },
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   /* config options here */
 };
 
