@@ -1,0 +1,17 @@
+# robots.txt for the site
+# Polite defaults for crawlers / scrapers
+# - Allow everything except internal and build paths
+# - Point crawlers to the sitemap if present
+
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /node_modules/
+Allow: /
+
+# A gentle crawl delay for older crawlers (seconds)
+Crawl-delay: 10
+
+# Sitemap 
+Sitemap: /sitemap.xml
