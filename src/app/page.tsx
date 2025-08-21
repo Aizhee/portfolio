@@ -172,7 +172,7 @@ export default function Home() {
 						</a>
 						<div className="flex flex-wrap gap-2 mt-4 justify-center">
 							<a
-								href="/path-to-cv.pdf"
+								href="/cv/Aizhar-Jamilano-Resume.pdf"
 								download
 								className="px-3 py-1 bg-mint-500 text-gray-900 dark:text-gray-100 font-medium rounded-full shadow-md hover:bg-mint-400 hover:scale-105 transition-all duration-300 text-sm"
 							>
