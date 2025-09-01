@@ -24,7 +24,7 @@ const projects = [
 		category: 'Machine Learning',
 	},
 	{
-		title: 'Start App',
+		title: 'Asenxio',
 		description: 'PSCX Entry.',
 		image: '/projects/strtpp.png',
 		link: '',
