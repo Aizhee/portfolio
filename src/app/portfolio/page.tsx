@@ -24,8 +24,8 @@ const projects = [
 		category: 'Machine Learning',
 	},
 	{
-		title: 'Asenxio',
-		description: 'PSCX Entry.',
+		title: 'Lunsario',
+		description: 'PSCX Entry. Top 5	in Regional Level.',
 		image: '/projects/strtpp.png',
 		link: '',
 		technologies: ['AI/ML', 'Web', 'React'],
